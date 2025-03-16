@@ -1,0 +1,59 @@
+site_name: RescueMaze
+
+nav:
+  - Home: index.md
+  - Components: components.md
+  - Resources: appendix/ref.md
+  - Rendering: cad/rendering.md
+
+theme:
+  language: en
+  logo: img/bulme.png
+  name: material
+  features:
+    - navigation.tracking
+    - content.footnote.tooltips
+    - content.code.copy
+    - content.code.select
+
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    # Dark Theme
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: indigo
+      accent: deep purple
+
+    # Light Theme
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+      
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true  
+  - pymdownx.superfences
+  - tables
+  - footnotes
+  
+  
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js  
+
+extra_css:
+  - assets/css/custom.css
+
+repo_url: https://github.com/Gwynspring/RescueMaze
+
+
+ 
