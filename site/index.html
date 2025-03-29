@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="components/">
+        <link rel="next" href="hardware/cad/fusion/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -334,15 +334,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#future-improvements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Improvements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#credits" class="md-nav__link">
     <span class="md-ellipsis">
       Credits
@@ -370,8 +361,88 @@
   
   
   
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="components/" class="md-nav__link">
+      <a href="hardware/cad/fusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hardware/cad/pcb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hardware/components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,6 +452,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -397,27 +476,6 @@
   
   <span class="md-ellipsis">
     Resources
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="cad/rendering/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rendering
     
   </span>
   
@@ -491,15 +549,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#future-improvements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Future Improvements
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#credits" class="md-nav__link">
     <span class="md-ellipsis">
       Credits
@@ -537,7 +586,7 @@
 <h2 id="overview"><strong>Overview</strong></h2>
 <p>This repository contains the code and documentation for my diploma project at HTL Bulme. The goal of this project is to design and implement a robust sensor integration and communication system for a rescue robot.<br />
 The system integrates multiple sensors, such as Time-of-Flight (ToF) sensors, the TCS34725 RGB module, and the L3GD20H gyroscope, using the I2C communication protocol.  </p>
-<p>Letter and color recognition is implemented using the OpenMV Cam H7. For detailed information, please visit the <a href="https://docs.openmv.io/">OpenMV Documentation</a>.<br />
+<p>Letter and color recognition is implemented using the OpenMV Cam H7. 
 Most of the tools used in this project come from the open-source community and can be built without purchasing additional software.  </p>
 <p>By sharing this project, I aim to contribute to the community.<br />
 Feel free to copy, modify, and experiment with the code. If you encounter any issues, please open an issue, and I will work on fixing the bug.  </p>
@@ -558,16 +607,7 @@ Feel free to copy, modify, and experiment with the code. If you encounter any is
 <p>Switching between driving modes:</p>
 <ul>
 <li><strong>Gyroscope-based navigation</strong>  </li>
-<li><strong>Encoder-based navigation</strong>  </li>
-</ul>
-<h3 id="future-improvements"><strong>Future Improvements</strong></h3>
-<ul>
-<li>Implement a function for rebooting when sensors lose connection.  </li>
-<li>Develop a pathfinding algorithm.  </li>
-<li>Integrate a camera system and AI for enhanced letter detection.  </li>
-<li>Add an Adafruit Neopixel ring for status indication on the field.  </li>
-<li>Implement servo motors for medical kit delivery.  </li>
-<li>Optimize the robot’s power management to extend operational time in the field.  </li>
+<li><strong>ToF-based navigation</strong>  </li>
 </ul>
 <h3 id="credits"><strong>Credits</strong></h3>
 <p>This project was developed as part of my diploma thesis at HTL Bulme Graz Gösting, with guidance and support from my teachers. Special thanks to the open-source community for providing the software and knowledge that made this project possible.</p>

@@ -2,9 +2,11 @@ site_name: RescueMaze
 
 nav:
   - Home: index.md
-  - Components: components.md
+  - Hardware: 
+    - CAD: hardware/cad/fusion.md
+    - PCB: hardware/cad/pcb.md 
+    - Components: hardware/components.md
   - Resources: appendix/ref.md
-  - Rendering: cad/rendering.md
 
 theme:
   language: en
@@ -42,7 +44,11 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - pymdownx.arithmatex:
       generic: true  
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - tables
   - footnotes
   

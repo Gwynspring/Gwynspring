@@ -7,7 +7,7 @@
 This repository contains the code and documentation for my diploma project at HTL Bulme. The goal of this project is to design and implement a robust sensor integration and communication system for a rescue robot.  
 The system integrates multiple sensors, such as Time-of-Flight (ToF) sensors, the TCS34725 RGB module, and the L3GD20H gyroscope, using the I2C communication protocol.  
 
-Letter and color recognition is implemented using the OpenMV Cam H7. For detailed information, please visit the [OpenMV Documentation](https://docs.openmv.io/).  
+Letter and color recognition is implemented using the OpenMV Cam H7. 
 Most of the tools used in this project come from the open-source community and can be built without purchasing additional software.  
 
 By sharing this project, I aim to contribute to the community.  
@@ -32,16 +32,7 @@ Control of four DF Robot 6V DC motors with encoders and a PID control system.
 Switching between driving modes:
 
 - **Gyroscope-based navigation**  
-- **Encoder-based navigation**  
-
-### **Future Improvements**
-
-- Implement a function for rebooting when sensors lose connection.  
-- Develop a pathfinding algorithm.  
-- Integrate a camera system and AI for enhanced letter detection.  
-- Add an Adafruit Neopixel ring for status indication on the field.  
-- Implement servo motors for medical kit delivery.  
-- Optimize the robot’s power management to extend operational time in the field.  
+- **ToF-based navigation**  
 
 ### **Credits**
 
